@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.pdf$\")",
+      "Bash(python3 -c \"import pdfplumber; print\\('pdfplumber ok'\\)\")",
+      "Bash(python3 -c \"import PyPDF2; print\\('PyPDF2 ok'\\)\")",
+      "Bash(python -c \"import pdfplumber; print\\('pdfplumber ok'\\)\")",
+      "Bash(cygpath -w /tmp/pdf_texts)",
+      "Read(//etc/**)",
+      "Bash(mount)",
+      "Bash(cat \"/tmp/pdf_texts/Fleiß et al._Mitigating algorithm aversion in recruiting.txt\")",
+      "Read(//tmp/**)",
+      "Bash(cmd.exe /c \"dir C:\\\\tmp\\\\pdf_texts\")",
+      "Bash(cygpath *)",
+      "Bash(cygpath -w /tmp/pdf_texts/)",
+      "Bash(wslpath -w /tmp/pdf_texts/)",
+      "Bash(cmd.exe /c \"echo %TEMP%\")",
+      "Bash(cmd /c \"echo %TEMP%\")",
+      "Bash(cmd /c \"dir C:\\\\tmp\\\\pdf_texts\\\\*.txt 2>nul | head -3\")",
+      "Bash(wslpath -w /tmp)",
+      "Bash(python3 *)"
+    ]
+  }
+}
